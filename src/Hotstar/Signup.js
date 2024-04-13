@@ -9,7 +9,7 @@ const SignUp = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('https://mobile-be-7soj.onrender.com/api/users/signup', { email, password });
+            const response = await axios.post('https://mobile-be-6l2x.onrender.com/api/users/signup', { email, password });
             setMessage('User created successfully');
             setEmail('');
             setPassword('');

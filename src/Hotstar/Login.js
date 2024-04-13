@@ -9,7 +9,7 @@ const Login = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('https://mobile-be-7soj.onrender.com/api/users/login', { email, password });
+            const response = await axios.post('https://mobile-be-6l2x.onrender.com/api/users/login', { email, password });
             setMessage('Login successful');
             localStorage.setItem('token', response.data.token);
         } catch (error) {

@@ -6,7 +6,7 @@ const Logout = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('https://mobile-be-7soj.onrender.com/api/users/logout', {
+            await axios.post('https://mobile-be-6l2x.onrender.com/api/users/logout', {
                 email: 'venu@gmail.com'  // Ensure to pass the correct email or manage via global state/context
             }, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
