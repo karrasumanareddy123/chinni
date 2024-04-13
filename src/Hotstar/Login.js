@@ -13,7 +13,7 @@ const Login = () => {
             setMessage('Login successful');
             localStorage.setItem('token', response.data.token);
         } catch (error) {
-            setMessage('Login failed');
+            setMessage('Login other device !! please logout ');
         }
     };
 
